@@ -1,0 +1,249 @@
+{
+  "id": "d89d05c2-969e-4729-94dc-069ea6b8a025",
+  "version": "2.0",
+  "name": "TestFreeCRMApplication",
+  "url": "https://www.google.be",
+  "tests": [{
+    "id": "d3eeaf5b-eef1-40e0-8f03-f3e23ae03709",
+    "name": "Failed_Login_Free_CRM",
+    "commands": [{
+      "id": "25a75bbf-8e61-4797-9255-d98b7cebabdb",
+      "comment": "",
+      "command": "open",
+      "target": "/index.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "39dbfaf7-dcbe-44e3-bbef-04db3d0d4ce1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "600x600",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "94bb1b87-bf2c-4735-8912-34638eeb044b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.icon-xs",
+      "targets": [
+        ["css=.icon-xs", "css:finder"],
+        ["xpath=//ul/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "57a95fdc-3a3a-476e-b838-96b80f5145ae",
+      "comment": "",
+      "command": "click",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.focus-visible", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//div[@id='ui']/div/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2be5c82c-53e4-46b2-82cd-acfb296a033b",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.focus-visible", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//div[@id='ui']/div/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "jos.vos@yopmail.com"
+    }, {
+      "id": "1d34ad7d-a597-4d99-8093-905017c688ca",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.focus-visible", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='ui']/div/div/form/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e69e8bbd-e511-4c9b-b3dc-cf0c85847ec3",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.focus-visible", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='ui']/div/div/form/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "Test"
+    }, {
+      "id": "723857aa-dc55-4ff1-81d8-bf130b2e415f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fluid",
+      "targets": [
+        ["css=.fluid", "css:finder"],
+        ["xpath=//div[@id='ui']/div/div/form/div/div[3]", "xpath:idRelative"],
+        ["xpath=//div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "06d0bc18-aec9-48e6-8d94-7b0a397a2ebf",
+    "name": "Check_Test_Suite",
+    "commands": [{
+      "id": "02a2a501-f513-4868-bd7a-d8d34f18c138",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "abfdae79-ee2f-48ba-9e8f-25bf1b9dc592",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x680",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "86b5b216-0d48-4c5d-b501-5edadbc13f1a",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Afbeeldingen",
+      "targets": [
+        ["linkText=Afbeeldingen", "linkText"],
+        ["css=.gb_h:nth-child(2) > .gb_g", "css:finder"],
+        ["xpath=//a[contains(text(),'Afbeeldingen')]", "xpath:link"],
+        ["xpath=//div[@id='gbw']/div/div/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.google.be/imghp?hl=nl&tab=wi&ogbl')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Afbeeldingen')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "091d831e-4b94-4531-a420-a06b8f8b43ca",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//form[@id='tsf']/div[2]/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Selenium"
+    }, {
+      "id": "1971d19f-3646-4cd0-b838-89db67ec195e",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//form[@id='tsf']/div[2]/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "2dfded38-fdd5-4caa-add2-e08596f40700",
+      "comment": "",
+      "command": "click",
+      "target": "css=.g:nth-child(1) .S3Uucc",
+      "targets": [
+        ["css=.g:nth-child(1) .S3Uucc", "css:finder"],
+        ["xpath=//div[@id='rso']/div/div/div/div/div/div/a/h3/span", "xpath:idRelative"],
+        ["xpath=//h3/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Selenium | Stichting tegen Kanker')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dd0adc5f-1818-4d3b-9129-b9fcd5146f69",
+      "comment": "",
+      "command": "click",
+      "target": "id=page-title",
+      "targets": [
+        ["id=page-title", "id"],
+        ["css=#page-title", "css:finder"],
+        ["xpath=//h1[@id='page-title']", "xpath:attributes"],
+        ["xpath=//section[@id='page-content']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Selenium')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "efb88837-f758-4751-8b92-767e1728a6a3",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Selenium | Stichting tegen Kanker",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c86072f6-b94b-40c5-83f5-3dc2d2c917ed",
+      "comment": "",
+      "command": "click",
+      "target": "id=edit-search-block-form--2",
+      "targets": [
+        ["id=edit-search-block-form--2", "id"],
+        ["name=search_block_form", "name"],
+        ["css=#edit-search-block-form--2", "css:finder"],
+        ["xpath=//input[@id='edit-search-block-form--2']", "xpath:attributes"],
+        ["xpath=//form[@id='search-block-form']/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "26283865-9c72-4e0c-a0c6-ecb988594450",
+      "comment": "",
+      "command": "type",
+      "target": "id=edit-search-block-form--2",
+      "targets": [
+        ["id=edit-search-block-form--2", "id"],
+        ["name=search_block_form", "name"],
+        ["css=#edit-search-block-form--2", "css:finder"],
+        ["xpath=//input[@id='edit-search-block-form--2']", "xpath:attributes"],
+        ["xpath=//form[@id='search-block-form']/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Kanker"
+    }, {
+      "id": "d02d449f-1128-478a-9dd1-f54cd5f77ae3",
+      "comment": "",
+      "command": "click",
+      "target": "id=edit-submit",
+      "targets": [
+        ["id=edit-submit", "id"],
+        ["name=op", "name"],
+        ["css=#edit-submit", "css:finder"],
+        ["xpath=//input[@id='edit-submit']", "xpath:attributes"],
+        ["xpath=//div[@id='edit-actions']/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d19472d4-c7a8-43d8-9bd3-42c96d242f29",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "49596fd4-4051-4d53-8447-da77ca182e3c",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["d3eeaf5b-eef1-40e0-8f03-f3e23ae03709"]
+  }],
+  "urls": ["https://freecrm.com/", "https://www.google.be/"],
+  "plugins": []
+}
